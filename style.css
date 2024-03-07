@@ -69,6 +69,7 @@ main .hero-section h1 {
 }
 
 main .hero-section p {
+    color      : var(--dark-grayish-magenta);
     font-size  : 1.25em;
     line-height: 1.5em;
     margin-top : 1em;
@@ -177,4 +178,69 @@ main .rating-group {
 
 .attribution a {
     color: var(--soft-pink);
+}
+
+@media (max-width: 375px) {
+    body {
+        gap           : 3em;
+        overflow-y    : scroll;
+        padding       : 5em 1em;
+        padding-bottom: 3em;
+    }
+
+    .bg-image-top {
+        width: 100%;
+    }
+
+    .bg-image-bottom {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        gap           : 2em;
+        width         : 100%;
+    }
+
+    main .hero-section {
+        text-align: center;
+        width     : 100%;
+    }
+
+    main .hero-section h1 {
+        font-size: 2.75em;
+    }
+
+    main .rating-group {
+        width: 100%;
+    }
+
+    .rating {
+        flex-direction: column;
+        gap           : 1em;
+        width         : 100%;
+    }
+
+    .rating:nth-child(2),
+    .rating:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .testimonial-group {
+        flex-direction: column;
+        gap           : 1.5em;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .testimonial:nth-child(1),
+    .testimonial:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .testimonial .author .status {
+        margin-top: .25em;
+    }
 }
