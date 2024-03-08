@@ -26,12 +26,11 @@ body {
     display         : flex;
     flex-direction  : column;
     font-family     : "League Spartan", sans-serif;
-    gap             : 4.25em;
     justify-content : center;
     min-height      : 100vh;
     min-width       : 100vw;
     overflow        : hidden;
-    padding         : 7.75em 11em;
+    padding         : 5vw 13vw;
     position        : relative;
 }
 
@@ -39,40 +38,41 @@ body {
     left    : 0;
     position: absolute;
     top     : 0;
-    width   : 40%;
+    width   : 35vw;
 }
 
 .bg-image-bottom {
     bottom  : 0;
     position: absolute;
     right   : 0;
-    width   : 95%;
+    width   : 80vw;
 }
 
 main {
     align-items    : center;
     display        : flex;
     flex-direction : row;
-    gap            : 4em;
+    gap            : 8vw;
     justify-content: space-between;
 }
 
 main .hero-section {
-    width: 40%;
+    width: 30vw;
 }
 
 main .hero-section h1 {
     color      : var(--very-dark-magenta);
-    font-size  : 3.75em;
+    font-size  : 3.5vw;
     font-weight: 700;
-    line-height: .9em;
+    line-height: 3.25vw;
+    width      : 80%;
 }
 
 main .hero-section p {
     color      : var(--dark-grayish-magenta);
-    font-size  : 1.25em;
-    line-height: 1.5em;
-    margin-top : 1em;
+    font-size  : 1.2vw;
+    line-height: 1.75vw;
+    margin-top : 1.5vw;
 }
 
 main .rating-group {
@@ -85,41 +85,46 @@ main .rating-group {
     border-radius   : .5em;
     display         : flex;
     flex-direction  : row;
-    gap             : 2.5em;
+    gap             : 2.5vw;
     height          : max-content;
-    padding         : 1.25em 2em;
-    width           : 30em;
+    padding         : 1.5vw 2vw;
+    width           : 30vw;
 }
 
 .rating:not(:last-child) {
-    margin-bottom: 1.25em;
+    margin-bottom: 1vw;
 }
 
 .rating .star-group {
     display       : flex;
     flex-direction: row;
-    gap           : .5em;
+    gap           : .5vw;
+}
+
+.rating .star-group img {
+    width: 1vw;
 }
 
 .rating p {
     color      : var(--very-dark-magenta);
-    font-size  : 1.15em;
+    font-size  : 1vw;
     font-weight: 700;
 }
 
 .rating:nth-child(2) {
-    margin-left: 3.25em;
+    margin-left: 3vw;
 }
 
 .rating:nth-child(3) {
-    margin-left: 6.5em;
+    margin-left: 6vw;
 }
 
 .testimonial-group {
     align-items   : center;
     display       : flex;
     flex-direction: row;
-    gap           : 2em;
+    gap           : 2vw;
+    margin        : 4.5vw 0;
     width         : 100%;
 }
 
@@ -127,52 +132,54 @@ main .rating-group {
     background-color: var(--very-dark-magenta);
     border-radius   : .5em;
     color           : var(--white);
-    height          : 15.5em;
-    padding         : 2.5em 2.25em;
-    width           : 23.3em;
-
+    height          : 15.5vw;
+    padding         : 2.5vw 2.25vw;
+    width           : 23vw;
 }
 
 .testimonial .author {
     align-items   : center;
     display       : flex;
     flex-direction: row;
-    gap           : 1.5em;
-    margin-bottom : 2em;
+    gap           : 1.25vw;
+    margin-bottom : 1vw;
 }
 
 .testimonial .author .author-photo {
     border-radius: 50%;
-    height       : 2.75em;
-    width        : 2.75em;
+    height       : 2.75vw;
+    width        : 2.75vw;
 }
 
 .testimonial .author .name {
-    font-size  : 1.1em;
+    font-size  : 1.15vw;
     font-weight: 500;
 }
 
 .testimonial .author .status {
     color        : var(--soft-pink);
-    font-size    : 1.1em;
-    margin-bottom: -.25em;
+    font-size    : 1.15vw;
+    margin-bottom: -.25vw;
+    margin-top   : .25vw;
 }
 
 .testimonial .testimony {
-    font-size  : 1.1em;
-    line-height: 1.25em;
+    font-size  : 1.05vw;
+    line-height: 1.5vw;
+    margin-top : 1.75vw;
 }
 
 .testimonial:nth-child(1) {
-    margin-top: -2em;
+    margin-top: -2vw;
 }
 
 .testimonial:nth-child(3) {
-    margin-top: 2em;
+    margin-top: 2vw;
 }
 
 .attribution {
-    font-size : .9em;
+    font-size : .8vw;
+    margin-top: -2vw;
     text-align: center;
 }
 
@@ -182,10 +189,10 @@ main .rating-group {
 
 @media (max-width: 375px) {
     body {
-        gap           : 3em;
+        gap           : 9vw;
         overflow-y    : scroll;
-        padding       : 5em 1em;
-        padding-bottom: 3em;
+        padding       : 21vw 6.5vw;
+        padding-bottom: 0;
     }
 
     .bg-image-top {
@@ -198,17 +205,27 @@ main .rating-group {
 
     main {
         flex-direction: column;
-        gap           : 2em;
+        gap           : 10vw;
         width         : 100%;
     }
 
     main .hero-section {
-        text-align: center;
-        width     : 100%;
+        align-items   : center;
+        display       : flex;
+        flex-direction: column;
+        text-align    : center;
+        width         : 100%;
     }
 
     main .hero-section h1 {
-        font-size: 2.75em;
+        font-size  : 10vw;
+        line-height: 9vw;
+        width      : 80%;
+    }
+
+    main .hero-section p {
+        font-size  : 4.5vw;
+        line-height: 6.5vw;
     }
 
     main .rating-group {
@@ -217,8 +234,26 @@ main .rating-group {
 
     .rating {
         flex-direction: column;
-        gap           : 1em;
+        gap           : 4vw;
+        padding-bottom: 4vw;
+        padding-top   : 4vw;
         width         : 100%;
+    }
+
+    .rating:not(:last-child) {
+        margin-bottom: 2vh;
+    }
+
+    .rating .star-group {
+        gap: 2vw;
+    }
+
+    .rating .star-group img {
+        width: 4.5vw;
+    }
+
+    .rating p {
+        font-size: 4.5vw;
     }
 
     .rating:nth-child(2),
@@ -228,11 +263,13 @@ main .rating-group {
 
     .testimonial-group {
         flex-direction: column;
-        gap           : 1.5em;
+        gap           : 4.25vw;
     }
 
     .testimonial {
-        width: 100%;
+        height : 66.25vw;
+        padding: 10.75vw 9vw;
+        width  : 100%;
     }
 
     .testimonial:nth-child(1),
@@ -240,7 +277,32 @@ main .rating-group {
         margin-top: 0;
     }
 
+    .testimonial .author {
+        gap: 5.75vw;
+    }
+
+    .testimonial .author .author-photo {
+        height: 10.5vw;
+        width : 10.5vw;
+    }
+
+    .testimonial .author .name {
+        font-size : 4.75vw;
+        margin-top: -2vw;
+    }
+
     .testimonial .author .status {
-        margin-top: .25em;
+        font-size : 4.75vw;
+        margin-top: 1vw;
+    }
+
+    .testimonial .testimony {
+        font-size  : 4.5vw;
+        line-height: 6vw;
+        margin-top : 7vw;
+    }
+
+    .attribution {
+        font-size: 3.25vw;
     }
 }
